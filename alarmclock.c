@@ -209,6 +209,9 @@ int menu()
 
 int main()
 {
+    // Make sure all alarms default to 0 by setting memory
+    memset(alarms, 0, sizeof(struct Alarm) * MAX_ALARMS);
+
     printf("Please enter \"s\" (schedule), \"l\" (list), \"c\" (cancel), \"x\" (exit)\n");
 
     while (1)
